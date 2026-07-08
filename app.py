@@ -1,9 +1,10 @@
 from flask import Flask, render_template, request
 import requests
 import json
+import os
 
 app = Flask(__name__)
-API_KEY = "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"
+API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 API_URL = "https://api.anthropic.com/v1/messages"
 
 history = []

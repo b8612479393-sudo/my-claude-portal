@@ -3,7 +3,7 @@ import requests
 import json
 
 app = Flask(__name__)
-API_KEY = "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"
+API_KEY = "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"
 API_URL = "https://api.anthropic.com/v1/messages"
 
 history = []
